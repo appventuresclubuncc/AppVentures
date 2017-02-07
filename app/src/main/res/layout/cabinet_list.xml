@@ -11,20 +11,27 @@
     android:paddingRight="16dp"
     android:paddingTop="10dp">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:textSize="16dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_height="30dp" />
 
     <TextView
         android:id="@+id/position"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:textSize="16dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_below="@+id/name"
+        android:layout_height="30dp" />
+
+    </LinearLayout>
 
 </RelativeLayout>

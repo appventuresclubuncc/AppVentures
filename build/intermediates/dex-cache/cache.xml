@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.1_fdb39f5c3e0d701f257c8d5339d3f1ce7740f1db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6648e7e6d876db2d453dd9b76bda915f4483d954">
+        <dex dex="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_e197084e2cc4465f38b9d4e022d12b0dd6cd0b68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.1_d093ab0d1948ec7abcd63a9c17aaded0caaf913d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mjord\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.1_d860a3a5cef3a23058827756ddcce0ea95b20436.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.1_619f8ff0af2fbe7c70efe0aaae4bef5d3ec3448b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.1_ca818d3a49068db5cb1dcb14ff4f6d0b641bb985.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.1_c947ff3244c2e97c33bf81566d40b72329419cf3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.1_693b3f9f087ec451d17e6ca8f2952968810a6ca4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.1_3831aa62231dc05f7375d342cd6396558f2f3b26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.1_337fae9054d6ec2d9e3a413ed91912d2e6c645fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca52296c6d27900531ad36fdefcb75f1fa6cdb4a">
+        <dex dex="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\pre-dexed\debug\instant-run_6363137e37e0c473960014ed9d367c9190009661.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.1_aea97c2bf525fb234ca5b97894f2cfc023110b8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="C:\Users\mjord\AndroidStudioProjects\AppVentures\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.1.1_f8b44d8d4b156095a3d8ebc3aa18285c77f0b00f.jar" />
+    </item>
+
+</items>

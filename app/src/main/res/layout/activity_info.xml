@@ -97,7 +97,8 @@
             android:maxWidth="70dp"
             android:maxHeight="70dp"
             android:scaleType="fitCenter"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:onClick="cabinetInfo"/>
     </LinearLayout>
 
     <TextView

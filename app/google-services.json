@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1094373561020",
+    "firebase_url": "https://appventures-46703.firebaseio.com",
+    "project_id": "appventures-46703",
+    "storage_bucket": "appventures-46703.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094373561020:android:ae733e8897845c53",
+        "android_client_info": {
+          "package_name": "com.uncc.appventures"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094373561020-vkpv0ghmo7d8ldmqev34kmfinoetqs8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAwBytwAQOlXW3XmQrF2JZ58Bep3RRg5A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

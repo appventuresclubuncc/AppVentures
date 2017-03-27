@@ -2,6 +2,9 @@ package com.uncc.appventures;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +12,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.uncc.appventures.model.CabinetMember;
+
+import java.io.InputStream;
 import java.util.ArrayList;
 
 
@@ -52,11 +58,35 @@ public class CabinetAdapter extends RecyclerView.Adapter<CabinetAdapter.MyHolder
         CabinetMember member = memberList.get(position);
         holder.mName.setText(member.getName());
         holder.mPosition.setText(member.getPosition());
-        holder.mImage.setImageResource(member.getImageId());
+        new DownloadImageTask(holder.mImage).execute(member.getUrl());
     }
 
     @Override
     public int getItemCount() {
         return memberList.size();
+    }
+
+    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
+        ImageView bmImage;
+
+        public DownloadImageTask(ImageView bmImage) {
+            this.bmImage = bmImage;
+        }
+
+        protected Bitmap doInBackground(String... urls) {
+            String urldisplay = urls[0];
+            Bitmap mIcon11 = null;
+            try {
+                InputStream in = new java.net.URL(urldisplay).openStream();
+                mIcon11 = BitmapFactory.decodeStream(in);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return mIcon11;
+        }
+
+        protected void onPostExecute(Bitmap result) {
+            bmImage.setImageBitmap(result);
+        }
     }
 }

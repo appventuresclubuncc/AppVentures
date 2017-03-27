@@ -4,9 +4,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Logger;
+import com.google.firebase.database.ValueEventListener;
+import com.uncc.appventures.firebase.FirebaseService;
+import com.uncc.appventures.model.CabinetMember;
 
 import java.util.ArrayList;
 
@@ -24,7 +34,7 @@ public class CabinetActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cabinet);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler);
-        mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         mRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), new RecyclerTouchListener.ClickListener() {
@@ -33,7 +43,7 @@ public class CabinetActivity extends AppCompatActivity {
                 CabinetMember member = members.get(position);
                 LinearLayout info = (LinearLayout) findViewById(R.id.facts);
                 info.setVisibility(View.VISIBLE);
-                TextView name = (TextView) findViewById(R.id.memName);
+                /*TextView name = (TextView) findViewById(R.id.memName);
                 name.setText(member.getName());
                 TextView pos = (TextView) findViewById(R.id.pos);
                 pos.setText(member.getPosition());
@@ -44,16 +54,32 @@ public class CabinetActivity extends AppCompatActivity {
                 TextView reason = (TextView) findViewById(R.id.reason);
                 reason.setText(member.getReason());
                 TextView grad = (TextView) findViewById(R.id.grad);
-                grad.setText(member.getGradDate());
+                grad.setText(member.getGradDate());*/
             }
         }));
 
-        members.add(new CabinetMember("Mikey", "President", R.drawable.family_younger_brother, "Computer Science", "Cyber Security", "Fun", "May 2018"));
-        members.add(new CabinetMember("Tony", "Vice-president", R.drawable.family_son, "Africana Studies", "Africa", "Boredom", "Graduated already"));
-        members.add(new CabinetMember("Rose", "Secretary", R.drawable.family_mother, "Nursing", "Oncology", "Getting back to school", "Graduated already"));
-        members.add(new CabinetMember("Asia", "Liaison", R.drawable.family_older_sister, "Pre-nursing", "General education", "Going to school", "Haven't started"));
-        members.add(new CabinetMember("Michael", "Treasurer", R.drawable.family_father, "Engineering", "Telecommunications", "Learning new technology", "Not going to school"));
-        adapter = new CabinetAdapter(members);
-        mRecyclerView.setAdapter(adapter);
+        DatabaseReference myRef = FirebaseService.getRootRef();
+
+        // Read from the database
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Log.d("LGL", "Called on data change");
+                for(DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    CabinetMember mem = snapshot.getValue(CabinetMember.class);
+                    members.add(mem);
+                    Log.d("LGL", "Value is: " + mem.getName());
+                }
+
+                adapter = new CabinetAdapter(members);
+                mRecyclerView.setAdapter(adapter);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                Log.w("LGL", "Failed to read value.", error.toException());
+            }
+        });
     }
 }

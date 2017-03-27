@@ -5,36 +5,26 @@ package com.uncc.appventures.model;
  */
 
 public class CabinetMember {
+    private String experience;
+    private String joined;
+    private String major;
+    private String name;
+    private String position;
+    private String url;
+    private String year;
 
-    String name;
-    String motivation;
-    String major;
-    String experience;
-    String position;
-    String collegeYear;
+    public CabinetMember() {
 
-    public String getName() {
-        return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getMotivation() {
-        return motivation;
-    }
-
-    public void setMotivation(String motivation) {
-        this.motivation = motivation;
-    }
-
-    public String getMajor() {
-        return major;
-    }
-
-    public void setMajor(String major) {
+    public CabinetMember(String experience, String joined, String major, String name, String position, String url, String year) {
+        this.experience = experience;
+        this.joined = joined;
         this.major = major;
+        this.name = name;
+        this.position = position;
+        this.url = url;
+        this.year = year;
     }
 
     public String getExperience() {
@@ -45,6 +35,30 @@ public class CabinetMember {
         this.experience = experience;
     }
 
+    public String getJoined() {
+        return joined;
+    }
+
+    public void setJoined(String joined) {
+        this.joined = joined;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getPosition() {
         return position;
     }
@@ -53,11 +67,20 @@ public class CabinetMember {
         this.position = position;
     }
 
-    public String getCollegeYear() {
-        return collegeYear;
+    public String getUrl() {
+        return url;
     }
 
-    public void setCollegeYear(String collegeYear) {
-        this.collegeYear = collegeYear;
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
     }
 }
+

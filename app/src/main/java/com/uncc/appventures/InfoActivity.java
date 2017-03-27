@@ -1,6 +1,7 @@
 package com.uncc.appventures;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,4 +21,24 @@ public class InfoActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void fackbook(View view) {
+        String url = "https://www.facebook.com/AppVenturesClub";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
+    public void orgsync(View view) {
+        String url = "https://orgsync.com/111096/chapter";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
+    public void uncc(View view) {
+        String url = "http://uncc.edu";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
 }

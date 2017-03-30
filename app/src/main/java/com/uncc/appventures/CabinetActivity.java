@@ -12,8 +12,6 @@ import android.widget.TextView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Logger;
 import com.google.firebase.database.ValueEventListener;
 import com.uncc.appventures.firebase.FirebaseService;
 import com.uncc.appventures.model.CabinetMember;
@@ -41,20 +39,22 @@ public class CabinetActivity extends AppCompatActivity {
             @Override
             public void onItemClick(View view, int position) {
                 CabinetMember member = members.get(position);
-                LinearLayout info = (LinearLayout) findViewById(R.id.facts);
-                info.setVisibility(View.VISIBLE);
-                /*TextView name = (TextView) findViewById(R.id.memName);
-                name.setText(member.getName());
-                TextView pos = (TextView) findViewById(R.id.pos);
-                pos.setText(member.getPosition());
-                TextView major = (TextView) findViewById(R.id.major);
+
+                Log.d("LGL", "clicked " + member.getName());
+
+                LinearLayout info = (LinearLayout) view.findViewById(R.id.facts);
+
+                info.setVisibility((info.getVisibility() == View.GONE ? View.VISIBLE : View.GONE));
+
+                TextView experience = (TextView) info.findViewById(R.id.experience);
+                experience.setText(member.getExperience());
+                TextView joined = (TextView) info.findViewById(R.id.joined);
+                joined.setText(member.getJoined());
+
+                TextView major = (TextView) info.findViewById(R.id.major);
                 major.setText(member.getMajor());
-                TextView concentration = (TextView) findViewById(R.id.concentration);
-                concentration.setText(member.getConcentration());
-                TextView reason = (TextView) findViewById(R.id.reason);
-                reason.setText(member.getReason());
-                TextView grad = (TextView) findViewById(R.id.grad);
-                grad.setText(member.getGradDate());*/
+                TextView year = (TextView) info.findViewById(R.id.year);
+                year.setText(member.getYear());
             }
         }));
 

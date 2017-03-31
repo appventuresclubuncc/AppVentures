@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">UNCC AppVenture</string>
-    <string name="intro">Welcome programmers, designers, composers, marketers, and app enthusiasts to the organization page for App Ventures at UNCC.
-
-If you are interested in working with mobile applications and would like to receive updates through our email list, then feel free to join us!"</string>
+    <string name="intro">
+        Welcome programmers, designers, composers, marketers, and app enthusiasts to the organization page for App Ventures at UNCC.
+        \n
+        \nIf you are interested in working with mobile applications and would like to receive updates through our email list, then feel free to join us through OrgSync!
+    </string>
 </resources>

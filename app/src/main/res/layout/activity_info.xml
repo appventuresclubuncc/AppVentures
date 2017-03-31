@@ -55,53 +55,95 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#aa000000"
-        android:paddingTop="30sp"
-        android:paddingBottom="20sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
         android:layout_marginTop="100sp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true">
 
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/facebook"
-            android:id="@+id/imageViewFacebook"
-            android:layout_alignParentBottom="true"
-            android:adjustViewBounds="true"
-            android:maxWidth="70dp"
-            android:maxHeight="70dp"
-            android:scaleType="fitCenter"
             android:layout_weight="1"
-            android:onClick="fackbook"/>
+            android:orientation="vertical"
+            android:id="@+id/facebook"
+            android:onClick="fackbook"
+            android:gravity="center">
 
-        <ImageView
+            <ImageView
+                android:id="@+id/imageViewFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxHeight="70dp"
+                android:maxWidth="70dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/facebook" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Facebook"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse"/>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/org_sync"
-            android:layout_alignTop="@+id/imageViewFacebook"
-            android:layout_toEndOf="@+id/imageViewFacebook"
-            android:id="@+id/imageViewOrgSync"
-            android:adjustViewBounds="true"
-            android:maxWidth="70dp"
-            android:maxHeight="70dp"
-            android:scaleType="fitCenter"
             android:layout_weight="1"
-            android:onClick="orgsync"/>
+            android:orientation="vertical"
+            android:id="@+id/orgsync"
+            android:onClick="orgsync"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/org_sync"
+                android:layout_alignTop="@+id/imageViewFacebook"
+                android:layout_toEndOf="@+id/imageViewFacebook"
+                android:id="@+id/imageViewOrgSync"
+                android:adjustViewBounds="true"
+                android:maxWidth="70dp"
+                android:maxHeight="70dp"
+                android:scaleType="fitCenter"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OrgSync"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse"/>
+        </LinearLayout>
 
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/memebers"
-            android:layout_alignTop="@+id/imageViewOrgSync"
-            android:layout_toEndOf="@+id/imageViewAppVenture"
-
-            android:id="@+id/imageViewMembers"
-            android:adjustViewBounds="true"
-            android:maxWidth="70dp"
-            android:maxHeight="70dp"
-            android:scaleType="fitCenter"
             android:layout_weight="1"
-            android:onClick="cabinetInfo"/>
+            android:orientation="vertical"
+            android:id="@+id/cabinet"
+            android:onClick="cabinetInfo"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/memebers"
+                android:layout_alignTop="@+id/imageViewOrgSync"
+                android:layout_toEndOf="@+id/imageViewAppVenture"
+                android:id="@+id/imageViewMembers"
+                android:adjustViewBounds="true"
+                android:maxWidth="70dp"
+                android:maxHeight="70dp"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cabinet"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse"/>
+        </LinearLayout>
     </LinearLayout>
 
     <TextView

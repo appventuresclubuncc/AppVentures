@@ -9,7 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     card_view:cardCornerRadius="4dp"
-    android:layout_marginBottom="10dp">
+    android:layout_margin="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -64,24 +64,32 @@
             android:visibility="gone">
 
             <TextView
+                style="@style/infoTitle"
+                android:text="Experience"/>
+            <TextView
                 android:id="@+id/experience"
-                style="@style/infoStyles"
-                tools:text="Experience" />
+                style="@style/infoStyles" />
 
+            <TextView
+                style="@style/infoTitle"
+                android:text="Joined"/>
             <TextView
                 android:id="@+id/joined"
-                style="@style/infoStyles"
-                tools:text="Joined" />
+                style="@style/infoStyles" />
 
+            <TextView
+                style="@style/infoTitle"
+                android:text="Major"/>
             <TextView
                 android:id="@+id/major"
-                style="@style/infoStyles"
-                tools:text="Major" />
+                style="@style/infoStyles" />
 
             <TextView
+                style="@style/infoTitle"
+                android:text="Year"/>
+            <TextView
                 android:id="@+id/year"
-                style="@style/infoStyles"
-                tools:text="Year" />
+                style="@style/infoStyles" />
         </LinearLayout>
     </LinearLayout>
 
